@@ -10,21 +10,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+
   </head>
-  <body> 
+
+  <body>
     {% load static %}
     <nav class="navbar navbar-light navbar-expand-lg bg-white">
-    <img class="navbar-brand small" src="{%static '../static/images/logoGalenos.png' %}" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    </button>
-      <div class="ml-auto">
-        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Inicio</button></a>
-        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Acerca de </button></a>
-        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Contáctanos</button></a>
-        <a target= "_blank" href="acceso/register/"><button type="button" class="btn btn-light mr-5 nav-btn btn-sm ml-1">Regístrate</button></a>
+      <img class="navbar-brand small" src="{%static '../static/images/logoGalenos.png' %}" alt="">
+      <h5 id="nav-slogan">Nuestra misión es tu cuidado</h5>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+        <div class="ml-auto">
+          <a target= "_blank" href="acceso/login/"><button type="button" class="btn mr-1 nav-btn btn-sm">Inicio</button></a>
+          <a target= "_blank" href="acceso/login/"><button type="button" class="btn mr-1 nav-btn btn-sm">Acerca de </button></a>
+          <a target= "_blank" href="acceso/login/"><button type="button" class="btn mr-1 nav-btn btn-sm">Contáctanos</button></a>
+          <a target= "_blank" href="acceso/register/"><button type="button" class="btn mr-5 nav-btn btn-sm ml-1">Regístrate</button></a>
+        </div>
+    </nav>
+
+    <main>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <img width="100%" src="../static/images/vector.svg" alt="">
+          </div>
+          <div class="col">
+            <div class="login-container">
+              <div class=" w-75 login-form-1 m-auto">
+                  <h3 class="">Iniciar sesión</h3>
+                  <form id="loginForm" method="POST">
+                      <!-- {% csrf_token %} -->
+                      <div class="form-group">
+                          <input name="userEmail" type="email" class="form-control" placeholder="Ingresa tu email *" id="userEmail" value="" />
+                      </div>
+                      <div class="form-group">
+                          <input name="userPassword" type="password" class="form-control" placeholder="Ingresa tu contraseña *" id="userPassword" value="" />
+                      </div>
+                      <div class="form-group">
+                          <button type="submit" class="btn btnSubmit login-btn" id="ingresar" value="ingresar">Ingresar</button>
+                      </div>
+                      <a href="#" class="ForgetPwd">¿Olvidaste tu contraseña?</a>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-  </nav>
-      
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
