@@ -8,10 +8,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../static/css/style.css">
   </head>
-  <body>
-    <h1>ASDF</h1>
+  <body> 
+    {% load static %}
+    <nav class="navbar navbar-light navbar-expand-lg bg-white">
+    <img class="navbar-brand small" src="{%static '../static/images/logoGalenos.png' %}" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+      <div class="ml-auto">
+        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Inicio</button></a>
+        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Acerca de </button></a>
+        <a target= "_blank" href="acceso/login/"><button type="button" class="btn btn-light mr-1 nav-btn btn-sm">Contáctanos</button></a>
+        <a target= "_blank" href="acceso/register/"><button type="button" class="btn btn-light mr-5 nav-btn btn-sm ml-1">Regístrate</button></a>
+      </div>
+  </nav>
       
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
