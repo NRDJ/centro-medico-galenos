@@ -45,5 +45,15 @@
     background-color: #D3E7E8;
   }
 
+#ingresar {
+    color: black;
+    background-color: #21c58c;
+    font-weight: 600;
+    text-decoration: none;
+}
 
+#ingresar:hover {
+    background-color: #D3E7E8;
+
+}
   
