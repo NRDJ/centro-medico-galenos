@@ -8,7 +8,6 @@ $(document).ready(function () {
 
         if (userEmail === "paciente@gmail.com" && userPassword === "paciente") {
             alert("Bienvenido paciente, ingresando a tu perfil...");
-            window.location.replace("../../templates/paciente/paciente.html");
         } 
         
         console.log($(userEmail));
